@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <title>Personal Bucket List</title>
+</head>
+<style>
+    .body {
+        background-color: black;
+    }
+    
+    body {
+        font-family: serif;
+        background-color: black;
+        font-size: 15px;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        color: #0c100d;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        ;
+    }
+    
+    h2 {
+        color: #ff5733;
+    }
+    
+    .category {
+        margin-top: 20px;
+    }
+    
+    ol,
+    ul {
+        padding: 0 20px;
+    }
+    
+    li {
+        background: #e0e0e0;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        /* Increase size by 1.5 times */
+        margin-right: 10px;
+        /* Optional: space between checkbox and label */
+    }
+    
+    .foldable-content {
+        display: none;
+        /* Hidden by default */
+        margin-left: 20px;
+    }
+    
+    .fold-btn {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+    }
+    
+    input[type="checkbox"] {
+        margin-left: 20px;
+        /* Space for the checkbox */
+    }
+    
+    .button {
+        align-items: center;
+    }
+    
+    #result {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    button {
+        background-color: #28A745;
+        /* Purple background */
+        color: white;
+        /* White text */
+        padding: 12px 24px;
+        /* Bigger button */
+        font-size: 18px;
+        /* Larger text */
+        border: none;
+        border-radius: 8px;
+        /* Rounded corners */
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    button:hover {
+        background-color: #28A745;
+        /* Darker purple on hover */
+    }
+</style>
+</head>
+
+<body>
+
+
+
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <img src="lg.png.crdownload" width="42" height="42" style="float:left">
+        <a href="#" class="logo"><span></span></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="456.html">Create own Bucket List</a>
+            <a href="indexx.html">Register now</a>
+            <a href="contact.html">contact us</a>
+
+        </nav>
+
+    </header>
+    <br><br><br><br><br>
+
+    <div class="container">
+
+        <h1> MY PERSONNAL BUCKET LIST</h1><br>
+        <div class="category">
+            <h2>❤️ Relationship Goals</h2><br>
+            <ol>
+                <li>
+                    <strong>👨‍👩‍👧‍👦 Family</strong>
+                    <ul>
+
+                        <li><input type="checkbox" id="item1" value="🚗 Go on a road trip with family">🚗 Go on a road trip with family</li>
+                        <li><input type="checkbox" id="item1"></li>
+                    </ul>
+                </li>
+
+
+                <li><strong>🎁 Friends</strong>
+                    <ul>
+                        <li><input type="checkbox" id="item1" value="🎉 Throw a surprise party for a friend">🎉 Throw a surprise party for a friend</li>
+                    </ul>
+                </li>
+
+
+                <li><strong>❤️ Love</strong>
+                    <ul>
+                        <li><input type="checkbox" id="item1" value="💍 Renew wedding vows">💍 Renew wedding vows</li>
+                    </ul>
+                </li>
+            </ol>
+
+        </div>
+
+
+
+        <div class="category">
+            <h2>🌍 Travel Goals</h2><br>
+            <ol>
+                <li>
+                    <strong>United States</strong>
+                    <ul>
+
+                        <li><input type="checkbox" id="item1" value="Walk across the Golden Gate Bridge">Walk across the Golden Gate Bridge</li>
+                        <li><input type="checkbox" id="item1"></li>
+                    </ul>
+                </li>
+
+
+                <li><strong>Europe</strong>
+                    <ul>
+                        <li><input type="checkbox" id="item1" value="Sail on a gondola in Venice">Sail on a gondola in Venice </li>
+                    </ul>
+                </li>
+
+
+                <li><strong>Vietnam</strong>
+                    <ul>
+                        <li><input type="checkbox" id="item1" value="Halong Bay Cruise with Swimming & Kayak Tour">Halong Bay Cruise with Swimming & Kayak Tour</li>
+                        <li><input type="checkbox" id="item1" value="hike on Titop Island, kayak at Luon Cave,and swim in the blue waters">hike on Titop Island, kayak at Luon Cave,and swim in the blue waters</li>
+
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+
+
+
+
+        <div class="category">
+            <h2>🎨 Personal Development Goals
+            </h2><br>
+            <ol>
+                <li>
+                    <strong>Education</strong>
+                    <ul>
+
+                        <li><input type="checkbox" id="item1" value="Obtain a certification in a hobby">Obtain a certification in a hobby</li>
+                        <li><input type="checkbox" id="item1" value="Get a hightest marks in exam"> Get a hightest marks in exam</li>
+                    </ul>
+                </li>
+
+
+                <li><strong>Wellness</strong>
+                    <ul>
+                        <li><input type="checkbox" id="item1" value="Go on a wellness retreat">Go on a wellness retreat</li>
+                    </ul>
+                </li>
+
+
+                <li><strong>Career</strong>
+                    <ul>
+                        <li><input type="checkbox" id="item1" value="Start a side business">Start a side business</li>
+                        <li><input type="checkbox" id="item1" value="Write a book or blog about your industry">Write a book or blog about your industry</li>
+
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+
+
+
+
+        <div class="category">
+            <h2>🍽️ Culinary Goals
+            </h2><br>
+            <ol>
+                <li>
+                    <strong> 🍷Food and Drink</strong>
+                    <ul>
+
+                        <li><input type="checkbox" id="item1" value="Learn to make homemade from pasta">🍝Learn to make homemade pasta from scratch</li>
+                        <li><input type="checkbox" id="item1" value="Master the art of making latte art">🍹Master the art of making latte art</li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <strong>🥢 International Cuisine</strong>
+                    <ul>
+                        <li><input type="checkbox" id="item1" value="Taste sushi in Japan ">🍣Roll your own sushi </li>
+                        <li><input type="checkbox" id="item1" value="Prepare a traditional Ramen with homemade broth"> 🍛Prepare a traditional Ramen with homemade broth</li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <strong>🍳 Cooking Skills</strong>
+                    <ul>
+                        <li><input type="checkbox" id="item1" value=" Master the art of BBQ"> 🍢Master the art of BBQ </li>
+                        <li><input type="checkbox" id="item1" value=" Cook a traditional dish from every continent"> 🥨 Cook a traditional dish from every continent </li>
+
+                    </ul>
+                </li>
+            </ol>
+
+
+            <button type="button" onclick="showSelectedOptions()">Save</button>
+            <div id="result"></div><br>
+        </div>
+    </div>
+
+
+    <script>
+        function showSelectedOptions() {
+            const selectedOptions = [];
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+            checkboxes.forEach(checkbox => {
+                selectedOptions.push(checkbox.value);
+            });
+
+            // Display the selected options as a list
+            const resultDiv = document.getElementById('result');
+            if (selectedOptions.length > 0) {
+                let listHTML = "<h3>You have selected:</h3><ul>";
+                selectedOptions.forEach(option => {
+                    listHTML += `<li>${option}</li>`;
+                });
+                listHTML += "</ul>";
+                resultDiv.innerHTML = listHTML;
+            } else {
+                resultDiv.innerHTML = "<h3>No options selected.</h3>";
+            }
+        }
+    </script>
+</body>
+
+</html>
